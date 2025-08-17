@@ -4,6 +4,19 @@
 
 @section('content')
 
-@livewire('system-monitoring')
+
+<div style="width: 350px;">
+    {!! $cpubusy->container() !!}
+</div>
+
+@endsection
+
+
+
+@section('script')
+
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+{!! $cpubusy->script() !!}
 
 @endsection
